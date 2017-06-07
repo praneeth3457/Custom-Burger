@@ -1,0 +1,16 @@
+.burger-img{
+  max-width: 100%;
+  height: auto;
+}
+
+.subTitle {
+  text-align: center;
+  margin-top: 60px;
+  font-family: PT Sans;
+  font-weight: 900;
+}
+
+.hr-line {
+  margin: 25px 60px;
+  border-top: 4px solid #ef582b;
+}
