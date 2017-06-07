@@ -10,7 +10,25 @@
   font-weight: 900;
 }
 
-.hr-line {
-  margin: 25px 60px;
+.main-title {
+  background: url("./../../assets/burger1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.build-btn {
+  width : 250px;
+  padding : 60px auto;
+}
+
+.sub-panel {
+  margin-top: 30px;
   border-top: 4px solid #ef582b;
+  padding: 25px 0;
 }
