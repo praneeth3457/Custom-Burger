@@ -4,3 +4,16 @@
 .main-content {
   margin-top: 50px;
 }
+.label-custom {
+  background-color : #ef582b;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 30px;
+  padding: 8px 10px;
+}
+.label-custom:hover{
+  background-color: #bf4622;
+}
+.navbar-header {
+  padding-top: 15px;
+}
