@@ -1,0 +1,34 @@
+
+.build-panel .panel-heading{
+  font-size: 22px;
+  font-weight: bold;
+  font-family: PT Sans;
+}
+.build-title {
+  text-align: center;
+  color : #ef582b;
+  font-family: PT Sans;
+  font-weight: bold;
+}
+
+.build-panel .panel-body, .panel-sub-heading{
+  font-size: 17px;
+  font-family: PT Sans;
+  color : #747474;
+}
+
+.build-img {
+  height: 150px;
+  width: 100%;
+}
+
+.btn-build {
+  background-color: #ef582b;
+  color: #FAFAFA;
+  border: 1px solid #ef582b;
+  font-weight: bold;
+}
+
+.price-tbl, .price-tbl tbody tr, .price-tbl tbody tr td, .price-tbl tbody tr th{
+  border: none;
+}
