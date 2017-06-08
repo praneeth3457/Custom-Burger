@@ -43,6 +43,7 @@
   text-align: center;
   font-family: PT Sans;
   font-weight: bold;
+  color : #ef582b;
 }
 
 .home-img {
@@ -58,4 +59,17 @@
 
 .sub-panel .caption {
   height: 220px;
+}
+
+.burger-details .panel-title{
+  color: #ef582b;
+  font-weight: 900;
+}
+.burger-details .price, .burger-details .calories{
+  padding: 0 10px;
+  color : #747474;
+}
+.burger-details p{
+  color: #747474;
+  font-style: italic;
 }
