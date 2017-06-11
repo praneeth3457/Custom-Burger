@@ -1,0 +1,68 @@
+<div class="panel panel-default build-panel">
+  <div class="panel-heading">{{data.question}} <span class="panel-sub-heading">({{data.subHead}})</span></div>
+  <div class="panel-body">
+    <div class="col-xs-8 col-md-9">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let value of data.subValues; let i = index;">
+          <div class="thumbnail radio">
+            <label>
+              <input *ngIf="data.max == 1 && !data.isExtra" type="radio" name="optionsRadios" [(ngModel)]="dataValue" (ngModelChange)="valueChanged(value)" id="{{data.item}}" value="{{value.name}}" checked>
+              <input *ngIf="data.max > 1 || data.isExtra" type="checkbox" name="value.id" [(ngModel)]="value.id" (ngModelChange)="valueChanged(value)">
+              <img class="build-img" src="../../assets/{{value.image}}" alt="{{value.name}}">
+              <div class="caption">
+                <h5 class="text-center">{{value.name}}</h5>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="text-center"><strong>PRICING</strong></div>
+          <hr/>
+          <table class="table price-tbl">
+            <tbody>
+            <tr>
+              <th>BASE PRICE :</th>
+              <td class="text-right">{{pricing.base | currency:'USD':true}}</td>
+            </tr>
+            <tr>
+              <th>ADDITIONAL PRICE :</th>
+              <td class="text-right">{{pricing.additional | currency:'USD':true}}</td>
+            </tr>
+            <tr>
+              <th>TAX :</th>
+              <td class="text-right">{{pricing.tax | currency:'USD':true}}</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <th>TOTAL</th>
+              <td class="text-right">{{pricing.total | currency:'USD':true}}</td>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="text-center"><strong>CALORIES</strong></div>
+          <hr/>
+          <h3 class="text-center"><strong>{{calories}} KCal</strong></h3>
+        </div>
+      </div>
+    </div>
+    <hr class="col-xs-12"/>
+    <div class="row">
+
+      <div class="col-xs-2 col-lg-offset-8">
+        <button class="btn btn-default btn-lg btn-block" (click)="backPage(data.item)"><strong>BACK</strong></button>
+      </div>
+      <div class="col-xs-2">
+        <button class="btn btn-primary btn-lg btn-block" (click)="nextPage(data.item, dataValue)"><strong>NEXT</strong></button>
+      </div>
+    </div>
+  </div>
+</div>

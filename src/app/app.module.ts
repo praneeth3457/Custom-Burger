@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ConstantService } from './services/constant.service';
 import { BuildComponent } from './build/build.component';
+import { PlanTypeComponent } from './plan-type/plan-type.component';
+import { CustomBuildComponent } from './custom-build/custom-build.component';
+import { SelectItemsDirective } from './directives/select-items.directive';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,7 +21,10 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    BuildComponent
+    BuildComponent,
+    PlanTypeComponent,
+    CustomBuildComponent,
+    SelectItemsDirective
   ],
   imports: [
     BrowserModule,

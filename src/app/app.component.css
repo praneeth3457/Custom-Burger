@@ -17,3 +17,22 @@
 .navbar-header {
   padding-top: 15px;
 }
+
+/*
+** CUSTOM & GENERIC STYLING FOR THE APPLICATION. JUST INCLUDE THIS FILE IN YOUR COMPONENENT STYLES
+*/
+.bold {
+  font-weight: bold;
+}
+.voffset4 {
+  margin-top: 20px;
+}
+.voffset6 {
+  margin-top: 30px;
+}
+
+.opacity {
+  opacity: 0.75;
+}
+
+
